@@ -1,5 +1,5 @@
 ---
-layout: plantillablog
+layout: layout
 title:  "¡Bienvenido a Jekyll! - Post 3"
 date:   2024-02-20 17:15:43 +0100
 categories: jekyll update
