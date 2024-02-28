@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html>
+---
+layout: layout
+---
 
-  <head>
-    <meta charset="utf-8">
-    <title>{{page.title}}</title>
-    <meta name="author" content="">
-    <meta name="description" content="">
-  </head>
 
-  <body>
 
-    <header>
-      {% include header.html %}
-    </header>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{site.baseurl}}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
-    <nav>
-      {% include nav.html %}
-    </nav>
-
-    <aside>
-      {% include aside.html %}
-    </aside>
-
-    <section>
-      {{content}}
-    </section>
-
-    <footer>
-      {% include footer.html %}
-    </footer>
-
-  </body>
-
-</html>
+{{content}}
